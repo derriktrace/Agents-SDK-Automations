@@ -67,11 +67,10 @@ Output a detailed, structured summary with a verdict
 
 File Structure
 
-.
-├── URLScan and VirusTotal Results - Need API keys V2.py
-├── attachments/            # Saved attachments (auto-created)
-├── README.md
-└── requirements.txt        # (optional, see below)
+URLScan and VirusTotal Results - Need API keys V2.py
+attachments/            # Saved attachments (auto-created)
+README.md
+requirements.txt        # (optional, see below)
 
 Notes
 
