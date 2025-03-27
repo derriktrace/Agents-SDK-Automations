@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+oletools
+python-magic
+dkimpy
+pyspf
+dnspython
+werkzeug
+pydantic
+agents-framework
