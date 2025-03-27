@@ -2,8 +2,6 @@ EML Phishing Analysis Framework
 
 A Python-based framework for analyzing `.eml` email files for phishing and malicious indicators. Integrates VirusTotal, URLScan.io, and deep header/body/link/attachment inspection. Ideal for SOC workflows, security researchers, or anyone doing email threat triage.
 
-
-
 What It Does
 
 Header Analysis
@@ -35,9 +33,9 @@ pip install -r requirements.txt
 
 Dependencies include:
 
-    requests, beautifulsoup4, oletools, python-magic, dkimpy, pyspf, dnspython, werkzeug, pydantic
+requests, beautifulsoup4, oletools, python-magic, dkimpy, pyspf, dnspython, werkzeug, pydantic
 
-    Plus agents-framework if you use the agent orchestration
+Plus agents-framework if you use the agent orchestration
 
 On macOS, you may need to install libmagic for python-magic to work:
 
@@ -59,13 +57,13 @@ python URLScan\ and\ VirusTotal\ Results\ -\ Need\ API\ keys\ V2.py
 
 The script will prompt you for the path to an .eml file. It will then:
 
-    Validate and hash the file
+Validate and hash the file
 
-    Run header/body/link/attachment analysis
+Run header/body/link/attachment analysis
 
-    Perform lookups with VirusTotal and URLScan.io
+Perform lookups with VirusTotal and URLScan.io
 
-    Output a detailed, structured summary with a verdict
+Output a detailed, structured summary with a verdict
 
 File Structure
 
@@ -77,8 +75,5 @@ File Structure
 
 Notes
 
-    Built-in logging shows intermediate steps and debug info.
-
-    It will defang all URLs (e.g., http://example.com → hxxp://example[.]com) to prevent accidental clicks.
-
-    You can adapt the agent tools for integration into SOC tools, SIEMs, or ticketing systems.
+Built-in logging shows intermediate steps and debug info.
+It will defang all URLs (e.g., http://example.com → hxxp://example[.]com) to prevent accidental clicks.You can adapt the agent tools for integration into SOC tools, SIEMs, or ticketing systems.
